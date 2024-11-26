@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Final Project (OSDCYOC A52 GROUP 7)</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" href="style2.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<!-- Font Awesome 6 -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Side Navigation -->
+<div class="w3-bar w3-theme">
+    <a href="home.html" class="w3-bar-item w3-button w3-padding-16">Home</a>
+    
+    <div class="w3-dropdown-hover">
+      <button class="w3-button w3-padding-16">
+        Information <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+        <a href="gamification.html" class="w3-bar-item w3-button">Gamification and Addiction</a>
+        <a href="information.html" class="w3-bar-item w3-button">Gambling & POGOs </a>
+        <a href="information.html" class="w3-bar-item w3-button">About PAGCOR</a>
+      </div>
+    </div>
+    
+    <div class="w3-dropdown-hover">
+      <button class="w3-button w3-padding-16">
+        Resources <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+        <a href="manageaddiction.html" class="w3-bar-item w3-button">Managing your Gambling Addiction</a>
+        <a href="reportapogo.html" class="w3-bar-item w3-button">Report a POGO</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="w3-row">
+    <div class="w3-container w3-theme w3-padding">
+      <header style="background-image: url('assets/stop.png'); background-size: cover; background-position: center; height: 400px; width: 100%; display: flex; align-items: center; color: white;">
+        <div style="padding: 20px; background-color: rgba(0, 0, 0, 0.5); width: 50%; border-radius: 8px;">
+            <h1><b>MANAGING YOUR GAMBLING ADDICTION</b></h1>
+        </div>
+    </header>
+    </div>
+    </div>
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Public Sans', sans-serif;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+        }
+        header {
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    text-align: left; /* Aligns the text to the left */
+    padding: 20px; /* Add padding for spacing */
+    color: white;
+}
+
+header .overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+    width: 60%; /* Optional: adjust the width of the overlay to fit the content */
+}
+
+.photo {
+    float: left;
+    margin-right: 20px;
+    width: 350px; /* Adjust size of photo */
+    height: auto;
+}
+        .photo-right {
+            float: right;
+            margin-left: 20px;
+            width: 300px; /* Adjust size of photo */
+            height: auto;
+        }
+        .clearfix {
+            clear: both;
+        }
+    </style>
+
+
+ <!-- Main Content Section -->
+ <div class="w3-border">
+    <div class="w3-bar w3-black">
+        <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openCity(event,'RecognizeTheSigns')"><b>Recognize the Signs</b></button>
+        <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openCity(event,'StepsToRegainControl')"><b>Steps to Regain Control</b></button>
+        <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openCity(event,'DevelopingLongTermStrategies')"><b>Developing Long-Term Strategies</b></button>
+    </div>
+
+    <div id="RecognizeTheSigns" class="w3-container city w3-animate-opacity" style="display: block;">
+        <div class="content-container">
+            <img src="assets/signs.png" alt="Recognize the Signs Image" class="content-image">
+            <div class="content-text">
+                <h2>Recognize the Signs</h2>
+                <p>Recognizing the signs of gambling addiction is crucial in taking the first step toward recovery. Common indicators include:</p>
+                <ul>
+                    <li>Increased time spent gambling, even when you don’t want to.</li>
+                    <li>Gambling despite negative consequences, such as financial losses.</li>
+                    <li>Feeling restless or irritable when trying to cut down on gambling.</li>
+                    <li>Lying about gambling behavior or hiding it from loved ones.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="StepsToRegainControl" class="w3-container city w3-animate-opacity" style="display: none;">
+        <div class="content-container">
+            <img src="assets/help.png" alt="Steps to Regain Control Image" class="content-image">
+            <div class="content-text">
+                <h2>Steps to Regain Control</h2>
+                <p>Taking control over gambling addiction requires a multi-step approach. Here are some steps to regain control:</p>
+                <ol>
+                    <li>Admit that you have a problem and seek help.</li>
+                    <li>Set limits on your gambling activities, such as time and money limits.</li>
+                    <li>Avoid triggers, like places or situations where you used to gamble.</li>
+                    <li>Seek professional help, such as therapy or support groups, to address underlying issues.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div id="DevelopingLongTermStrategies" class="w3-container city w3-animate-opacity" style="display: none;">
+        <div class="content-container">
+            <img src="assets/selfcare.png" alt="Developing Long-Term Strategies Image" class="content-image">
+            <div class="content-text">
+                <h2>Developing Long-Term Strategies</h2>
+                <p>Long-term strategies are essential for maintaining recovery from gambling addiction. Consider the following:</p>
+                <ul>
+                    <li>Building a strong support network with family, friends, and professionals.</li>
+                    <li>Engaging in healthy hobbies and activities to replace gambling.</li>
+                    <li>Monitoring progress and seeking help when temptations arise.</li>
+                    <li>Commitment to self-care and mindfulness to manage stress and emotions.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Header -->
+    <div class="w3-center" style="margin-top: 100px;">
+    <h1 class="w3-xxxlarge w3-animate-bottom"><b>YOU ARE NOT ALONE.</b></h1>
+<p>Gambling addiction can feel isolating, but help is available. Taking steps to address it is a sign of strength. With the right support and tools, you can break free from gambling addiction and build a fulfilling, healthy future.</p>
+      <div class="w3-padding-32">
+        <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;">GET HELP</button>
+      </div>
+    </div>
+  
+  <!-- Modal -->
+  <div id="id01" class="w3-modal">
+      <div class="w3-modal-content w3-card-4 w3-animate-top">
+        <header class="w3-container w3-theme-l1"> 
+          <span onclick="document.getElementById('id01').style.display='none'"
+          class="w3-button w3-display-topright">×</span>
+          <h4>CONTACT INFORMATION</h4>
+          <p>If you or someone you know is struggling with gambling addiction, don’t hesitate to reach out to a trusted counselor or a helpline in your area.</p>
+          <p><b>GAMBLERS ANONYMOUS PILIPINAS</b><br>info@gaphilippines.org</p>
+          <p><b>HOTLINES</b><br>Reagan: 0917-509-4080<br>Zita: 0917-311-2232<br>Babyruth: 0968-273-9205</p>
+        </header>
+      </div>
+  </div>
+
+
+<!-- Footer -->
+<div class="w3-border">
+<footer class="w3-container w3-theme-dark w3-padding-16">
+    <p>This site is made as a final requirement for our class in Cyberspace, Organizations and Communities (OSDCYOC) A52. </p>
+    <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
+      <span class="w3-text w3-theme-light w3-padding">Go To Top</span>    
+      <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
+      <i class="fa fa-chevron-circle-up"></i></span></a>
+    </div>
+    <p>Please click the buttons to go back to the gambling demo website OR access references:</p>
+      <p></p><a href="bet777-osdcyoc.vercel.app" class="w3-btn w3-theme-light" target="_blank">BET777</a></p>
+      <a href="references.html" class="w3-btn w3-theme-light" target="_blank">REFERENCES</a></p>
+    </footer>
+  
+  
+
+<!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
+<script>
+    // Side navigation
+    function w3_open() {
+      var x = document.getElementById("mySidebar");
+      x.style.width = "100%";
+      x.style.fontSize = "40px";
+      x.style.paddingTop = "10%";
+      x.style.display = "block";
+    }
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+    
+    // Tabs
+    function openCity(evt, cityName) {
+      var i;
+      var x = document.getElementsByClassName("city");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      var activebtn = document.getElementsByClassName("testbtn");
+      for (i = 0; i < x.length; i++) {
+        activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " w3-dark-grey";
+    }
+    
+    var mybtn = document.getElementsByClassName("testbtn")[0];
+    mybtn.click();
+    
+    // Accordions
+    function myAccFunc(id) {
+      var x = document.getElementById(id);
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+    
+    // Slideshows
+    var slideIndex = 1;
+    
+    function plusDivs(n) {
+      slideIndex = slideIndex + n;
+      showDivs(slideIndex);
+    }
+    
+    function showDivs(n) {
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = x.length} ;
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+    
+    showDivs(1);
+    
+    // Progress Bars
+    function move() {
+      var elem = document.getElementById("myBar");   
+      var width = 5;
+      var id = setInterval(frame, 10);
+      function frame() {
+        if (width == 100) {
+          clearInterval(id);
+        } else {
+          width++; 
+          elem.style.width = width + '%'; 
+          elem.innerHTML = width * 1  + '%';
+        }
+      }
+    }
+    </script>
+    
+    </body>
+    </html>
+    
