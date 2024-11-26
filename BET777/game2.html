@@ -32,17 +32,18 @@
         </iframe>
     </div>
     <script>
-        // Timer for redirecting to anti-gambling website
-window.onload = function () {
-    setTimeout(() => {
-        alert("Your playtime is up! Redirecting to responsible gambling resources.");
-        window.location.href = "../anti-gambling/home.html"; // Anti-gambling website
-    }, 60 * 1000); // 3 minutes
-    
-        // Function to redirect to the home page
-function redirectToHome() {
-    window.location.href = "home.html"; // Replace with the actual file path for the home page
-};
-    </script>
+  // Timer for redirecting to anti-gambling website
+  window.onload = function () {
+      setTimeout(() => {
+          alert("Your playtime is up! Redirecting to responsible gambling resources.");
+          window.location.href = "../anti-gambling/home.html"; // Anti-gambling website
+      }, 60 * 1000); // 1 minute (60 * 1000 milliseconds)
+  };
+
+  // Function to redirect to the home page
+  function redirectToHome() {
+      window.location.href = "home.html"; // Replace with the actual file path for the home page
+  };
+</script>
 </body>
 </html>
