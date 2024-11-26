@@ -36,8 +36,12 @@
 window.onload = function () {
     setTimeout(() => {
         alert("Your playtime is up! Redirecting to responsible gambling resources.");
-        window.location.href = "anti-gambling/home-antigambling.html"; // Anti-gambling website
+        window.location.href = "../anti-gambling/home.html"; // Anti-gambling website
     }, 60 * 1000); // 3 minutes
+    
+        // Function to redirect to the home page
+function redirectToHome() {
+    window.location.href = "home.html"; // Replace with the actual file path for the home page
 };
     </script>
 </body>
