@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BET777 ONLINE</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="BET777/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header with Banner -->
+        <header class="banner">
+            <img src="assets/banner.png" alt="Casino Banner">
+            <!-- Sign Up Button -->
+            <button class="signup-btn" onclick="redirectToHome()">Sign Up Now</button>
+        </header>
+    </div>
+    <script>
+        // Timer for redirecting to anti-gambling website
+window.onload = function () {
+    setTimeout(() => {
+        alert("Your playtime is up! Redirecting to responsible gambling resources.");
+        window.location.href = "anti-gambling/home-antigambling.html"; // Anti-gambling website
+    }, 60 * 1000); // 3 minutes
+};
+    </script>
+</body>
+</html>
